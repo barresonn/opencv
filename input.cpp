@@ -37,7 +37,7 @@ void input::action()
 	case 3:
 	{
 		unsigned int brightness;
-		std::cout << "quel cangement de luminosité voulez vous " << std::endl;
+		std::cout << "quel changement de luminosite voulez vous " << std::endl;
 		std::cout << "donnez un nombre entre -255 et 255" << std::endl;
 		std::cin >> brightness;
 		change_brightness(brightness, "brightness");
@@ -49,11 +49,11 @@ void input::action()
 	{
 		unsigned int _x; unsigned int _y; unsigned int _kernel;
 
-		std::cout << "donnez le nombre de dérivée par x" << std::endl;
+		std::cout << "donnez le nombre de derivee par x" << std::endl;
 		std::cin >> _x;
-		std::cout << "donnez le nombre de dérivée par y" << std::endl;
+		std::cout << "donnez le nombre de derivee par y" << std::endl;
 		std::cin >> _y;
-		std::cout << "donnez sur combien de pixel les derivée doivent étre faites(valeur conseilée au alentour de 30)" << std::endl;
+		std::cout << "donnez sur combien de pixel les derivee doivent étre faites(valeur conseilée au alentour de 30)" << std::endl;
 		std::cin >> _kernel;
 		calcul_gradient(_x, _y, _kernel, "derive");
 		cv::waitKey(0);

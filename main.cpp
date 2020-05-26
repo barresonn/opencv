@@ -23,19 +23,7 @@ int main(){
 	
 
 	
-	//lena.image_afficher("test1");
-	//lena.calcul_gradient(1, 1, 0, "derive");
-	//lena.change_brightness(-100,"lennnnnna.jpg");
 	
-	//lena.convert_to_greyscale("greyscale");
-	//lena.filtreMedian("a l'aide",10);
-	//lena.gaussianBlur("nom_image", 10);
-	
-	//lena.Erosion(1, 1, "igsyifgd");
-	//Dilation(1, 1, "dsgyiqcaeydgy");
-	//lena.contours(0, 100, "contour"); 
-	
-	//lena.seuil(100,255, "hjifhsdui");
 	cv::destroyAllWindows();
 	return 0;
 }
