@@ -1,6 +1,6 @@
 #pragma once
 # include <iostream>
-#include "brightness.h"
+#include "image.h"
 
 class input :public image
 {

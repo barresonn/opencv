@@ -1,7 +1,7 @@
 
 # include <opencv2/opencv.hpp> 
 # include <iostream>
-# include "brightness.h"
+# include "image.h"
 #include "input.h"
 #include "display.h"
 
@@ -14,6 +14,7 @@ int main(){
 	image lena;
 	display display;
 	input input;
+	
 	do {
 		display.initialisation();
 		input.action();

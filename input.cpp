@@ -1,5 +1,5 @@
 #include "input.h"
-#include "brightness.h"
+#include "image.h"
 
 
 
@@ -148,6 +148,16 @@ void input::action()
 		std::cout << "sous quel nom voulez vous sauvegarder votre image" << std::endl;
 		std::cin >> _y;
 		sauvegarder(_y);
+		break;
+	}
+	case 13:
+	{
+		break;
+		int _x; int _y; int _scalar;
+		std::cin >> _x;
+		std::cin >> _y;
+		std::cin >> _scalar;
+		regiongrow(_x,_y,_scalar);
 		break;
 	}
 	case 0:

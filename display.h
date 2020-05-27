@@ -3,8 +3,6 @@
 class display
 {
 
-	private:
-		int page;
 
 	public:
 

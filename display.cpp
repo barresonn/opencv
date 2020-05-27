@@ -1,13 +1,10 @@
+
 #include "display.h"
 
 
 
+display::display() {}
 
-display::display() :
-	page(0)
-{
-
-}
 
 
 void display::initialisation()

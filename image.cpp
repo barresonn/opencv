@@ -1,4 +1,4 @@
-#include "brightness.h"
+#include "image.h"
 
 #pragma once
 
@@ -163,12 +163,23 @@ void image::sauvegarder(cv::String nom_image)
 	
 }
 
-bool image::getcondition()
-{
-	return (condition);
-}
 
-void image::setcondition()
+void image::regiongrow(int _x, int _y, int _scalar)
 {
-	this->condition = 0;
+
+	
+	//Create a mask from edges in the original image
+	cv::Mat mask;
+	cv::Canny(img, mask, 100, 200);
+	cv::copyMakeBorder(mask, mask, 1, 1, 1, 1, cv::BORDER_REPLICATE);
+
+	//Fill mask with value 128
+	uchar fillValue = 128;
+	cv::Point seed(_x, _y);
+	cv::imshow("nom_image3", mask);
+	cv::floodFill(img, mask, seed, cv::Scalar(_scalar), 0, cv::Scalar(_scalar), cv::Scalar(_scalar), 4| (fillValue << 8));
+	cv::imshow("nom_image4", img);
+	cv::imshow("nom_image2", mask);
+	
+
 }

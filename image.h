@@ -25,8 +25,8 @@ public:
 	void contours(int low_threshold, int high_thresholds, cv::String nom_image);
 	void seuil(int seuil_haut, int valeur_arbitraire, cv::String nom_image);
 	void sauvegarder(cv::String nom_image);
-	bool getcondition();
-	void setcondition();
+
+	void regiongrow(int _x,int _y,int _scalar);
 };
 
 
